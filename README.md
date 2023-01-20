@@ -43,7 +43,7 @@ Run the examples
 To run tests, run the following command
 
 ```bash
-  go test
+  go test ./... -cover
 ```
 
 ## Project Structure
@@ -58,6 +58,7 @@ To run tests, run the following command
 │   ├── adapter
 │   │   ├── alpha_client_adapter.go
 │   │   ├── betha_client_adapter.go
+│   │   ├── client_adapter_test.go
 │   │   ├── clients
 │   │   │   ├── alpha_client.go
 │   │   │   └── betha_client.go
@@ -76,6 +77,7 @@ What did you learn while building this project? What challenges did you face and
 
 - Add e.g for one or more implementations of proxy design pattern.
 - Add execution of functions with routines and channels for error handling.
+- Add coverage test badge.
 
 ## Authors
 

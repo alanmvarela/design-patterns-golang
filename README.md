@@ -3,6 +3,7 @@
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![Last Commit](https://img.shields.io/github/last-commit/alanmvarela/golang-design-patterns?style=flat-square)]()
 [![Go Report Card](https://goreportcard.com/badge/github.com/alanmvarela/golang-design-patterns)](https://goreportcard.com/report/github.com/alanmvarela/golang-design-patterns)
+[![Go Version](https://img.shields.io/github/go-mod/go-version/alanmvarela/golang-design-patterns?style=flat-square)]()
 
 # Golang Design Patterns
 
@@ -16,7 +17,11 @@ All of the examples included in this project are based on the awsome explanation
 
 ## Features
 
-- TBD
+- Examples and Implementation of Adapter Design Pattern.
+- Examples and Implementation of Bridge Design Pattern.
+- Examples and Implementation of Decorator Design Pattern.
+- Examples and Implementation of Facade Design Pattern.
+- Tests with 100% coverage using golang tests package.
 
 ## Run Locally
 
@@ -36,6 +41,9 @@ Run the examples
 
 ```bash
   go run cmd/adapter/adapter.go
+  go run cmd/bridge/bridge.go
+  go run cmd/decorator/decorator.go
+  go run cmd/facade/facade.go
 ```
 
 ## Running Tests
@@ -71,7 +79,9 @@ To run tests, run the following command
 
 ## Lessons Learned
 
-What did you learn while building this project? What challenges did you face and how did you overcome them?
+I learnt to identify when to implement each design pattern by applying practical examples.
+
+Also I was able to provide implementations of each pattern while using golang best practices and most accepted approaches related to: error handling, code documentation, project structure and testing.
 
 ## Roadmap
 

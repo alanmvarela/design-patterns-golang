@@ -7,6 +7,7 @@
 # Golang Design Patterns
 
 A recopilation of design patterns implemented in Golang. This repository was created with the purpose of understanding the approach taken by Golang language to implement different Design Patterns.
+
 All of the examples included in this project are based on the awsome explanations provided by [Refactor Guru](https://refactoring.guru/design-patterns/).
 
 ## Tech Stack
@@ -48,7 +49,23 @@ To run tests, run the following command
 ## Project Structure
 
 ```bash
-TBD
+.
+├── cmd
+│   └── adapter
+│       └── adapter.go
+├── go.mod
+├── pkg
+│   ├── adapter
+│   │   ├── alpha_client_adapter.go
+│   │   ├── betha_client_adapter.go
+│   │   ├── clients
+│   │   │   ├── alpha_client.go
+│   │   │   └── betha_client.go
+│   │   └── dns_client.go
+│   ├── bridge
+│   ├── decorator
+│   └── facade
+└── README.md
 ```
 
 ## Lessons Learned
@@ -58,6 +75,7 @@ What did you learn while building this project? What challenges did you face and
 ## Roadmap
 
 - Add e.g for one or more implementations of proxy design pattern.
+- Add execution of functions with routines and channels for error handling.
 
 ## Authors
 

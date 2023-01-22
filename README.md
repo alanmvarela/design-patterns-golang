@@ -108,7 +108,6 @@ Also I was able to provide implementations of each pattern while using golang be
 
 - Add e.g for one or more implementations of proxy design pattern.
 - Add execution of functions with routines and channels for error handling.
-- Fix coverage test badge workflow.
 
 ## Authors
 

@@ -14,7 +14,14 @@ func TestCredentialsManagerOne(t *testing.T) {
 	}()
 	credentialsManager := CredentialsManagerOne{}
 	// Get credentials from the credentials manager
-	credentialsManager.GetCredentials("example.com")
+	credentials, error := credentialsManager.GetCredentials("example.com")
+	if error != nil {
+		t.Errorf("Error getting credentials: %s", error)
+	}
+	if *credentials != "Credentials for account example.com from credential manager One" {
+		t.Errorf("Credentials are not correct: %s", *credentials)
+	}
+
 }
 
 // Test CredentialsManagerTwo tests the credentials manager
@@ -26,5 +33,12 @@ func TestCredentialsManagerTwo(t *testing.T) {
 	}()
 	credentialsManager := CredentialsManagerTwo{}
 	// Get credentials from the credentials manager
-	credentialsManager.GetCredentials("example.com")
+	credentials, error := credentialsManager.GetCredentials("example.com")
+	if error != nil {
+		t.Errorf("Error getting credentials: %s", error)
+	}
+	if *credentials != "Credentials for account example.com from credential manager Two" {
+		t.Errorf("Credentials are not correct: %s", *credentials)
+	}
+
 }

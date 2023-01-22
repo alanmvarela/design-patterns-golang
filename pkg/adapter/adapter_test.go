@@ -1,17 +1,18 @@
-// Package adapter provides a client adapter for the client package
+// Package bridge provides a bridge example using go.
 package adapter
 
 import (
 	"testing"
 
-	c "github.com/alanmvarela/golang-design-patterns/pkg/adapter/clients"
+	a "github.com/alanmvarela/golang-design-patterns/pkg/adapter/adapters"
+	c "github.com/alanmvarela/golang-design-patterns/pkg/adapter/third_party"
 )
 
 // TestAlphaClientAdapter tests the client adapter
 func TestAlphaClientAdapter(t *testing.T) {
 	client := c.NewAlphaClient()
 	// Create a new client adapter
-	adapter := NewAlphaClientAdapter(client)
+	adapter := a.NewAlphaClientAdapter(client)
 
 	// Send a query to the client adapter
 	response, err := adapter.Query("example.com")
@@ -32,7 +33,7 @@ func TestAlphaClientAdapter(t *testing.T) {
 func TestBethaClientAdapter(t *testing.T) {
 	client := c.NewBethaClient()
 	// Create a new client adapter
-	adapter := NewBethaClientAdapter(client)
+	adapter := a.NewBethaClientAdapter(client)
 
 	// Send a query to the client adapter
 	response, err := adapter.Query("example.com")

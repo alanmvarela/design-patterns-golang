@@ -1,8 +1,8 @@
-name: generate code coverage badge
-
+name: code coverage badge
 on:
-  pull_request:
+  push:
     branches:
+      - master
       - main
 
 jobs:

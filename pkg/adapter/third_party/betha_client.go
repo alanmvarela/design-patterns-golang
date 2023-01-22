@@ -1,5 +1,5 @@
-// The Package client provides clients that can be used to query servers.
-package clients
+// The Package thirdParty contains the third party clients that can be used to query servers.
+package thirdParty
 
 import "errors"
 
@@ -13,7 +13,7 @@ func NewBethaClient() *BethaClient {
 	return &BethaClient{}
 }
 
-// The Query method sends a DNS query to the Betha API and returns the response.
+// The Query method sends a query to the Betha API and returns the response.
 func (c *BethaClient) BethaClientQuery(q string) (*string, error) {
 	if q == "" {
 		return nil, errors.New("query cannot be empty")

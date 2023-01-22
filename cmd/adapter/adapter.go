@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"log"
 
-	a "github.com/alanmvarela/golang-design-patterns/pkg/adapter"
+	a "github.com/alanmvarela/golang-design-patterns/pkg/adapter/adapters"
 	c "github.com/alanmvarela/golang-design-patterns/pkg/adapter/clients"
 )
 
 func main() {
-	defer fmt.Println("Adapter design pattern example finished.")
+	defer fmt.Println("Adapter design pattern example starting")
 
 	// The AlphaClient and BethaClient represents clients that can be used to query two different API.
 	// This clients doesnt adjust to the Client interface, therefore we need an adapter.
@@ -27,7 +27,7 @@ func main() {
 	if err != nil {
 		log.Panic("Error quering the client: ", err)
 	}
-	response_betha, err := bethaClientAdapter.Query("")
+	response_betha, err := bethaClientAdapter.Query("google.com")
 	if err != nil {
 		log.Panic("Error quering the client: ", err)
 	}

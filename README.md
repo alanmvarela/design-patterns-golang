@@ -57,21 +57,43 @@ To run tests, run the following command
 ```bash
 .
 ├── cmd
-│   └── adapter
-│       └── adapter.go
+│   ├── adapter
+│   │   └── adapter.go
+│   └── bridge
+│       └── bridge.go
 ├── go.mod
 ├── pkg
 │   ├── adapter
-│   │   ├── alpha_client_adapter.go
-│   │   ├── betha_client_adapter.go
-│   │   ├── client_adapter_test.go
+│   │   ├── adapters
+│   │   │   ├── alpha_client_adapter.go
+│   │   │   ├── betha_client_adapter.go
+│   │   │   └── client.go
+│   │   ├── adapter_test.go
+│   │   ├── README.md
+│   │   └── third_party
+│   │       ├── alpha_client.go
+│   │       └── betha_client.go
+│   ├── bridge
 │   │   ├── clients
 │   │   │   ├── alpha_client.go
-│   │   │   └── betha_client.go
-│   │   └── dns_client.go
-│   ├── bridge
+│   │   │   ├── betha_client.go
+│   │   │   ├── client.go
+│   │   │   └── client_test.go
+│   │   ├── credentials_manager
+│   │   │   ├── credential_manager_one.go
+│   │   │   ├── credential_manager_two.go
+│   │   │   ├── credentials_manager.go
+│   │   │   └── credentials_manager_test.go
+│   │   ├── logger
+│   │   │   ├── logger.go
+│   │   │   ├── logger_test.go
+│   │   │   ├── log_one.go
+│   │   │   └── log_two.go
+│   │   └── README.md
 │   ├── decorator
+│   │   └── README.md
 │   └── facade
+│       └── README.md
 └── README.md
 ```
 

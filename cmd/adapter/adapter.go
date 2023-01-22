@@ -6,7 +6,7 @@ import (
 	"log"
 
 	a "github.com/alanmvarela/golang-design-patterns/pkg/adapter/adapters"
-	c "github.com/alanmvarela/golang-design-patterns/pkg/adapter/clients"
+	c "github.com/alanmvarela/golang-design-patterns/pkg/adapter/third_party"
 )
 
 func main() {

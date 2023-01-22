@@ -20,7 +20,7 @@ All of the examples included in this project are based on the awsome explanation
 - Examples and Implementation of [Bridge Design Pattern](https://github.com/alanmvarela/golang-design-patterns/tree/master/pkg/bridge).
 - Examples and Implementation of [Decorator Design Pattern](https://github.com/alanmvarela/golang-design-patterns/tree/master/pkg/decorator).
 - Examples and Implementation of [Facade Design Pattern](https://github.com/alanmvarela/golang-design-patterns/tree/master/pkg/facade).
-- Tests with 100% coverage using golang tests package.
+- Tests over 70% coverage using golang tests package.
 
 ## Run Locally
 

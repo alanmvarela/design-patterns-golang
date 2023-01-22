@@ -1,8 +1,8 @@
-// The Package adapter provides the adapter implementations to use the third party clients.
-package adapter
+// The Package adapters provides the adapter implementations to use the third party clients.
+package adapters
 
 import (
-	c "github.com/alanmvarela/golang-design-patterns/pkg/adapter/clients"
+	c "github.com/alanmvarela/golang-design-patterns/pkg/adapter/third_party"
 )
 
 // The AlphaClientAdapter represents an adapter that can be used to query the Alpha API.

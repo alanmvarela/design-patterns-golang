@@ -15,10 +15,10 @@ All of the examples included in this project are based on the awsome explanation
 
 ## Features
 
-- Examples and Implementation of Adapter Design Pattern.
-- Examples and Implementation of Bridge Design Pattern.
-- Examples and Implementation of Decorator Design Pattern.
-- Examples and Implementation of Facade Design Pattern.
+- Examples and Implementation of [Adapter Design Pattern](https://github.com/alanmvarela/golang-design-patterns/tree/master/pkg/adapter).
+- Examples and Implementation of [Bridge Design Pattern](https://github.com/alanmvarela/golang-design-patterns/tree/master/pkg/bridge).
+- Examples and Implementation of [Decorator Design Pattern](https://github.com/alanmvarela/golang-design-patterns/tree/master/pkg/decorator).
+- Examples and Implementation of [Facade Design Pattern](https://github.com/alanmvarela/golang-design-patterns/tree/master/pkg/facade).
 - Tests with 100% coverage using golang tests package.
 
 ## Run Locally
@@ -85,7 +85,7 @@ Also I was able to provide implementations of each pattern while using golang be
 
 - Add e.g for one or more implementations of proxy design pattern.
 - Add execution of functions with routines and channels for error handling.
-- Add coverage test badge.
+- Fix coverage test badge workflow.
 
 ## Authors
 

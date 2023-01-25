@@ -60,24 +60,28 @@ To run tests, run the following command
 ├── cmd
 │   ├── adapter
 │   │   └── adapter.go
-│   └── bridge
-│       └── bridge.go
+│   ├── bridge
+│   │   └── bridge.go
+│   ├── decorator
+│   │   └── decorator.go
+│   └── facade
+│       └── facade.go
 ├── go.mod
 ├── pkg
 │   ├── adapter
 │   │   ├── adapters
 │   │   │   ├── alpha_client_adapter.go
-│   │   │   ├── betha_client_adapter.go
+│   │   │   ├── beta_client_adapter.go
 │   │   │   └── client.go
 │   │   ├── adapter_test.go
 │   │   ├── README.md
 │   │   └── third_party
 │   │       ├── alpha_client.go
-│   │       └── betha_client.go
+│   │       └── beta_client.go
 │   ├── bridge
 │   │   ├── clients
 │   │   │   ├── alpha_client.go
-│   │   │   ├── betha_client.go
+│   │   │   ├── beta_client.go
 │   │   │   ├── client.go
 │   │   │   └── client_test.go
 │   │   ├── credentials_manager
@@ -92,9 +96,28 @@ To run tests, run the following command
 │   │   │   └── log_two.go
 │   │   └── README.md
 │   ├── decorator
-│   │   └── README.md
+│   │   ├── clients
+│   │   │   ├── alpha_client.go
+│   │   │   ├── beta_client.go
+│   │   │   ├── client.go
+│   │   │   └── client_test.go
+│   │   ├── README.md
+│   │   └── service
+│   │       ├── service.go
+│   │       └── service_test.go
 │   └── facade
-│       └── README.md
+│       ├── clients
+│       │   ├── alpha_client.go
+│       │   ├── beta_client.go
+│       │   ├── client.go
+│       │   └── client_test.go
+│       ├── facades
+│       │   ├── facades_test.go
+│       │   └── serviceFacade.go
+│       ├── README.md
+│       └── service
+│           ├── service.go
+│           └── service_test.go
 └── README.md
 ```
 
@@ -108,6 +131,7 @@ Also I was able to provide implementations of each pattern while using golang be
 
 - Add e.g for one or more implementations of proxy design pattern.
 - Add execution of functions with routines and channels for error handling.
+- Add mocks for unit testing.
 
 ## Authors
 

@@ -17,11 +17,11 @@ In order to use these third parties clients we need to implement adapters to mat
 .
 ├── adapters
 │   ├── alpha_client_adapter.go
-│   ├── betha_client_adapter.go
+│   ├── beta_client_adapter.go
 │   └── client.go
 ├── adapter_test.go
 ├── README.md
 └── third_party
     ├── alpha_client.go
-    └── betha_client.go
+    └── beta_client.go
 ```

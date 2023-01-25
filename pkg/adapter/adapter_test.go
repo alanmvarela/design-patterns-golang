@@ -8,7 +8,6 @@ import (
 	c "github.com/alanmvarela/golang-design-patterns/pkg/adapter/third_party"
 )
 
-// TestAlphaClientAdapter tests the client adapter
 func TestAlphaClientAdapter(t *testing.T) {
 	client := c.NewAlphaClient()
 	// Create a new client adapter
@@ -29,11 +28,10 @@ func TestAlphaClientAdapter(t *testing.T) {
 	}
 }
 
-// TestBethaClientAdapter tests the client adapter
-func TestBethaClientAdapter(t *testing.T) {
-	client := c.NewBethaClient()
+func TestBetaClientAdapter(t *testing.T) {
+	client := c.NewBetaClient()
 	// Create a new client adapter
-	adapter := a.NewBethaClientAdapter(client)
+	adapter := a.NewBetaClientAdapter(client)
 
 	// Send a query to the client adapter
 	response, err := adapter.Query("example.com")
@@ -45,7 +43,7 @@ func TestBethaClientAdapter(t *testing.T) {
 	if response == nil {
 		t.Error("Query returned a nil response")
 	}
-	if response != nil && *response != "Response from Betha API for query example.com" {
+	if response != nil && *response != "Response from Beta API for query example.com" {
 		t.Errorf("Query returned an incorrect response: %s", *response)
 	}
 }

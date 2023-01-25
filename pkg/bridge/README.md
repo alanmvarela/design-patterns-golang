@@ -17,7 +17,7 @@ In order to do this, the bridge pattern is used to detach the implementation of 
 .
 ├── clients
 │   ├── alpha_client.go
-│   ├── betha_client.go
+│   ├── beta_client.go
 │   ├── client.go
 │   └── client_test.go
 ├── credentials_manager

@@ -9,7 +9,6 @@ import (
 	l "github.com/alanmvarela/golang-design-patterns/pkg/bridge/logger"
 )
 
-// TestAlphaClient tests the AlphaClient.
 func TestAlphaClient(t *testing.T) {
 	client := NewAlphaClient()
 	client.SetLogger(&l.LoggerOne{})
@@ -26,16 +25,15 @@ func TestAlphaClient(t *testing.T) {
 	}
 }
 
-// TestBethaClient tests the BetaClient.
-func TestBethaClient(t *testing.T) {
-	client := NewBethaClient()
+func TestBetaClient(t *testing.T) {
+	client := NewBetaClient()
 	client.SetLogger(&l.LoggerTwo{})
 	client.SetCredentialsManager(&m.CredentialsManagerTwo{})
 	response, error := client.Query("test")
 	if error != nil {
 		t.Error(error)
 	}
-	expectedResponse := "Response from Betha API for query test with credentials: Credentials for account betha from credential manager Two"
+	expectedResponse := "Response from Beta API for query test with credentials: Credentials for account Beta from credential manager Two"
 	fmt.Println(*response)
 	fmt.Println(expectedResponse)
 	if *response != expectedResponse {

@@ -5,7 +5,6 @@ import (
 	"testing"
 )
 
-// Test CredentialsManagerOne tests the credentials manager
 func TestCredentialsManagerOne(t *testing.T) {
 	defer func() {
 		if r := recover(); r != nil {
@@ -24,7 +23,6 @@ func TestCredentialsManagerOne(t *testing.T) {
 
 }
 
-// Test CredentialsManagerTwo tests the credentials manager
 func TestCredentialsManagerTwo(t *testing.T) {
 	defer func() {
 		if r := recover(); r != nil {

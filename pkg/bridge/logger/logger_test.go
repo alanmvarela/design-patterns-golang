@@ -5,7 +5,6 @@ import (
 	"testing"
 )
 
-// Test LoggerOne tests the logger
 func TestLoggerOne(t *testing.T) {
 	defer func() {
 		if r := recover(); r != nil {
@@ -17,7 +16,6 @@ func TestLoggerOne(t *testing.T) {
 	logger.Log("example.com")
 }
 
-// Test LoggerTwo tests the logger
 func TestLoggerTwo(t *testing.T) {
 	defer func() {
 		if r := recover(); r != nil {

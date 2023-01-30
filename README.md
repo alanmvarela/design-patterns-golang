@@ -4,7 +4,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/alanmvarela/golang-design-patterns)](https://goreportcard.com/report/github.com/alanmvarela/golang-design-patterns)
 [![Go Version](https://img.shields.io/github/go-mod/go-version/alanmvarela/golang-design-patterns?style=flat-square)]()
 
-# Golang Design Patterns
+# Design Patterns - Golang
 
 A recopilation of design patterns implemented in Golang. This repository was created with the purpose of understanding the approach taken by Golang language to implement different Design Patterns.
 
